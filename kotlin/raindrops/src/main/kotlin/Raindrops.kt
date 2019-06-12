@@ -10,10 +10,6 @@ object Raindrops {
         if (number.rem(7) == 0) {
             strOutput += "Plong"
         }
-        return if (strOutput.isNotEmpty()) {
-            strOutput
-        } else {
-            number.toString()
-        }
+        return if (strOutput.isNotEmpty()) strOutput else number.toString()
     }
 }
